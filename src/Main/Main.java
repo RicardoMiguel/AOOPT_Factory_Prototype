@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * Created by Ricardo on 23/03/2016.
  */
-public class main {
+public class Main {
     public static void main(String[] args){
         PairDatabase pairDatabase = new LLDatabase();
 
@@ -19,9 +19,8 @@ public class main {
         pairDatabase.put(1,1);
         pairDatabase.put(5,3);
 
-        List<Integer> values = pairDatabase.getValue(1);
-
-        System.out.println(values);
+        System.out.println(pairDatabase.getValue(1));
+        System.out.println(pairDatabase.getValue(5));
 
         PrototypeDatabase prototypeDatabase = new PrototypeDatabase(new ArrayList<>());
 
